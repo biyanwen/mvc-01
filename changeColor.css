@@ -1,0 +1,28 @@
+.changeColor {
+    border: 1px solid red;
+    max-width: 50%;
+    width: 50%;
+    position: relative;
+}
+
+.changeColor > .shape {
+    border: 1px black solid;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    border-radius: 50px;
+    animation: change 1s infinite alternate;
+}
+
+@keyframes change {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: red;
+    }
+}

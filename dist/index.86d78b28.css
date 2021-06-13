@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+.compute{
+    border: 1px solid red;
+    max-width: 50%;
+    width: 50%;
+}
+.tab {
+    border: 1px solid red;
+    max-width: 50%;
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tab > .leftTab {
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-height: 15%;
+
+}
+
+.tab > .rightTag {
+    border: 1px solid black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    max-height: 15%;
+}
+
+.tab > .active {
+    background-color: blanchedalmond;
+}
+.move {
+    border: 1px solid red;
+    max-width: 50%;
+    width: 50%;
+    position: relative;
+}
+
+.move > .box {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    transition: transform 1s;
+}
+
+.move > .box.active {
+    transform: translateX(150px);
+}
+.changeColor {
+    border: 1px solid red;
+    max-width: 50%;
+    width: 50%;
+    position: relative;
+}
+
+.changeColor > .shape {
+    border: 1px black solid;
+    width: 100px;
+    margin-top: 50px;
+    margin-left: 20px;
+    height: 100px;
+    position: absolute;
+    top: 20px;
+    border-radius: 50px;
+    animation: change 1s infinite alternate;
+}
+
+@keyframes change {
+    0% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+/*# sourceMappingURL=index.86d78b28.css.map */

@@ -1,0 +1,5 @@
+import "./global.css"
+import "./compute"
+import "./tab"
+import "./move"
+import "./changeColor"

@@ -1,0 +1,4 @@
+.parcel-cache
+log/
+.idea
+node_modules
